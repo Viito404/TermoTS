@@ -1,0 +1,147 @@
+body, html { margin: 0; min-height: 100vh; }
+
+body { 
+  font-family: 'Mitr', sans-serif;
+  background-color: #6e5c62;
+  color: #ffffff;
+}
+
+.conteudo { 
+  padding: 1%;
+
+  gap: 10px;
+
+  display: grid;
+  place-items: center;
+}
+.grid-termo {
+  display: grid;
+  grid-template-rows: repeat(5, 50px);
+  gap: 7px;
+
+  margin-bottom: 2%;
+}
+
+.grid-termo > .linha {
+  display: grid;
+  grid-template-columns: repeat(5, 50px);
+  gap: 7px;
+}
+
+.grid-termo > .linha > .letra {
+  display: grid;
+  place-items: center;
+  height: 100%;
+
+  background-color: #312a2c;
+  color: #fafafa;
+  border-radius: 10%;
+
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.grid-teclado {
+  display: grid;
+  grid-template-columns: repeat(10, 50px);
+  gap: 5px;
+  color: #504a4b;
+  text-align: center;
+}
+
+.grid-teclado > button {
+  height: 50px;
+
+  border: none;
+  border-radius: 5px;
+  background-color: #4C4347;
+  font-size: large;
+  color: #fafafa;
+  font-weight: 800;
+}
+
+.grid-teclado > .btn-enter {
+  grid-column: 2 span
+}
+
+.grid-teclado > .btn-apagar {
+  grid-column: 2 span;
+  text-align: center;
+  padding: 5px 5px;
+}
+.grid-teclado > button:hover {
+  background-color: #4c4347cc;
+  cursor: pointer;
+}
+
+.grid-teclado > button:active {
+  transition: 200ms ease-in-out;
+  box-shadow: 0px 0px 12px -2px white;
+  transform: scale(0.9);
+}
+.pnl-notificacao{
+display: flex;
+flex-direction: row;
+gap: 10px;
+}
+
+.display-none{
+  display: none !important;
+}
+.pnl-notificacao > .mensagem-resultado{
+border: 5px solid white;
+border-radius: 5%;
+padding: 5px;
+}
+.pnl-notificacao > .btn-reiniciar{
+  border-radius: 10%;
+  border: none;
+  height: 40px;
+  width: 70px;
+  gap: 5px;
+  background-color: #fafafa;
+  font-family: 'Mitr', sans-serif;
+}
+.pnl-notificacao > .btn-reiniciar:hover{
+  cursor: pointer;
+  background-color: #e4e1e1;
+}
+.pnl-notificacao > .btn-reiniciar:active{
+  transition: 200ms ease-in-out;
+  transform: scale(0.9);
+}
+
+.pnl-notificacao{
+  gap: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.letra-correta{
+  background-color: green !important;
+}
+
+.letra-incorreta{
+  background-color: orange !important;
+}
+
+.letra-inexistente{
+  background-color: gray !important;
+}
+
+.display-none{
+  display: none !important;
+}
+
+.cor-cinza{
+  background-color: #e3d4d4 !important;
+}
+
+.erro{
+  color: #ee1414 !important;
+}
+
+.acerto{
+  color: #12d245 !important;
+}
